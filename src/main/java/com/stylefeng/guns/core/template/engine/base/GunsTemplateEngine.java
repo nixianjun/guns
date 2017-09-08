@@ -54,7 +54,7 @@ public abstract class GunsTemplateEngine extends AbstractTemplateEngine {
     public void generateFile(String template,String filePath){
         Template pageTemplate = groupTemplate.getTemplate(template);
         configTemplate(pageTemplate);
-        if(PlatformUtil.isLinux()){
+        if(PlatformUtil.isLinux()||PlatformUtil.isMac()){
             filePath = filePath.replaceAll("/+|\\\\+","/");
         }else{
             filePath = filePath.replaceAll("/+|\\\\+","\\\\");

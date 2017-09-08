@@ -19,7 +19,7 @@ public class TemplateGenerator {
         contextConfig.setBizChName("啊哈");
         contextConfig.setBizEnName("haha");
         contextConfig.setModuleName("tk");
-        contextConfig.setProjectPath("D:\\tmp\\guns");
+        contextConfig.setProjectPath("/Users/nixianjun/newProjects/guns/");
 
         //contextConfig.setAddPageSwitch(false);
         //contextConfig.setEditPageSwitch(false);
