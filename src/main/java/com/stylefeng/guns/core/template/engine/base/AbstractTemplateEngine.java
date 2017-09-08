@@ -1,6 +1,10 @@
 package com.stylefeng.guns.core.template.engine.base;
 
 import com.stylefeng.guns.core.template.config.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import java.util.logging.Logger;
 
 /**
  * 模板生成父类
@@ -9,6 +13,7 @@ import com.stylefeng.guns.core.template.config.*;
  * @date 2017-05-08 20:17
  */
 public class AbstractTemplateEngine {
+    protected Log logger= LogFactory.getLog(getClass().getName());
 
     protected ContextConfig contextConfig;                //全局配置
     protected ControllerConfig controllerConfig;          //控制器的配置
